@@ -118,14 +118,14 @@ public class TechJobs {
         String header;
         int i = 0;
 
-        System.out.println("****************");
-        for (HashMap<String, String> job : someJobs){
 
+        for (HashMap<String, String> job : someJobs){
+            System.out.println("\n****************");
             for (Map.Entry<String, String> jobElement : job.entrySet()){
                 System.out.println(jobElement.getKey() + ": " + jobElement.getValue());
                 i++;
             }
-            System.out.println("****************");
+            System.out.println("\n****************");
         }
         if (i == 0){
             System.out.println("There are no jobs currently in our database matching those criteria.");
